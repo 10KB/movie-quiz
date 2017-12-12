@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  @include size(100%);
+}
+
+body {
+  background-color: $body-bg;
+  color: $body-color;
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  margin: 0;
+}
+
+main {
+  background: $body-bg;
+  margin: 0 auto;
+  max-width: 480px;
+  min-height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}

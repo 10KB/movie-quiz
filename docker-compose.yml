@@ -1,0 +1,12 @@
+version: '3'
+services:
+  quiz:
+    build: .
+    command: npm run dev
+    volumes:
+      - .:/usr/src/app
+      - bundle:/usr/src/app/node_modules
+    ports:
+      - 3000:3000
+volumes:
+  bundle:
